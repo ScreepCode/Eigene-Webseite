@@ -5,11 +5,23 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <title>ScreepCode - Projekte</title>
-    <link rel="stylesheet" href="../css/w3css.css">
-    <link rel="stylesheet" href="../css/w3css-theme.css">
-    <link rel="stylesheet" href="../css/hover.css">
-    <script text="text/javascript" src="../js/custom.js"></script>
+    <title>Niklas Buse - Projekte</title>
+    <link rel="stylesheet" href="static/css/w3css.css">
+    <link rel="stylesheet" href="static/css/w3css-theme.css">
+    <link rel="stylesheet" href="static/css/hover.css">
+    <script text="text/javascript" src="static/js/custom.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/media/Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/media/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/media/Icons/favicon-16x16.png">
+    <link rel="manifest" href="/static/media/Icons/site.webmanifest">
+    <link rel="mask-icon" href="/static/media/Icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/media/Icons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Niklas Buse">
+    <meta name="application-name" content="Niklas Buse">
+    <meta name="msapplication-TileColor" content="#0d59ad">
+    <meta name="msapplication-config" content="/static/media/Icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="w3-theme-d5" style="height:100%; margin: 0;">
@@ -17,19 +29,19 @@
         <div class="w3-bar">
             <div class="w3-bar-item"><svg id="Logo" height="30" width="50"><text x="0" y="15" fill="Black">LOGO</text></svg></div>
             <div class="w3-hide-small" id="normalMenu">
-                <a class="w3-bar-item w3-button w3-mobile" href="../../index.html">Home</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="Projekte.html">Projekte</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="Gear.html">Gear</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="Kontakt.html">Kontakt</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
             </div>
     
             <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
-                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="../media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
+                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
                 <div id="mobileLinks" class="w3-hide">
-                    <a class="w3-bar-item w3-button w3-mobile" href="../../index.html">Home</a>
-                    <a class="w3-bar-item w3-button w3-mobile" href="Projekte.html">Projekte</a>
-                    <a class="w3-bar-item w3-button w3-mobile" href="Gear.html">Gear</a>
-                    <a class="w3-bar-item w3-button w3-mobile" href="Kontakt.html">Kontakt</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -44,13 +56,13 @@
 
 <script>
     (async function () {
-        GitHubJSON = await fetch("../js/githubInfos.json")
+        GitHubJSON = await fetch("static/js/githubInfos.json")
         .then(response => response.json())
         .catch((error) => {
             console.error('Error:', error);
         });
 
-        GitColors = await fetch("../js/githubcolor.json")
+        GitColors = await fetch("static/js/githubcolor.json")
         .then(response => response.json())
         .catch((error) => {
              console.error('Error:', error); 
