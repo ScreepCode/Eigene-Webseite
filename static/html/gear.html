@@ -8,16 +8,29 @@
     <title>ScreepCode - Gear</title>
     <link rel="stylesheet" href="../css/w3css.css">
     <link rel="stylesheet" href="../css/w3css-theme.css">
+    <script text="text/javascript" src="../js/custom.js"></script>
 </head>
 
 <body class="w3-theme-d5" style="height:100%; margin: 0;">
     <div class="w3-top" style="background-color:rgba(15, 15, 15, 0.6)">
         <div class="w3-bar">
-            <div class="w3-bar-item w3-hide-small"><svg id="Logo" height="30" width="50"><text x="0" y="15" fill="Black">LOGO</text></svg></div>
-            <a class="w3-bar-item w3-button w3-mobile" href="../../index.html">Home</a>
-            <a class="w3-bar-item w3-button w3-mobile" href="Projekte.html">Projekte</a>
-            <a class="w3-bar-item w3-button w3-mobile" href="Gear.html">Gear</a>
-            <a class="w3-bar-item w3-button w3-mobile" href="Kontakt.html">Kontakt</a>
+            <div class="w3-bar-item"><svg id="Logo" height="30" width="50"><text x="0" y="15" fill="Black">LOGO</text></svg></div>
+            <div class="w3-hide-small" id="normalMenu">
+                <a class="w3-bar-item w3-button w3-mobile" href="../../index.html">Home</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="Projekte.html">Projekte</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="Gear.html">Gear</a>
+                <a class="w3-bar-item w3-button w3-mobile" href="Kontakt.html">Kontakt</a>
+            </div>
+    
+            <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
+                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="../media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
+                <div id="mobileLinks" class="w3-hide">
+                    <a class="w3-bar-item w3-button w3-mobile" href="../../index.html">Home</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="Projekte.html">Projekte</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="Gear.html">Gear</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="Kontakt.html">Kontakt</a>
+                </div>
+            </div>
         </div>
     </div>
     
