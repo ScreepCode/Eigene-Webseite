@@ -1,3 +1,7 @@
+html{
+	scroll-behavior: smooth;
+}
+
 .hover {
     -webkit-transform: scale(1);
 	-moz-transform: scale(1);
