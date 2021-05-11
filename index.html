@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="static/css/w3css.css">
     <link rel="stylesheet" href="static/css/w3css-theme.css">
     <link rel="stylesheet" href="static/css/hover.css">
+    <link rel="stylesheet" href="static/css/custom.css">
     <script text="text/javascript" src="static/js/custom.js"></script>
-
+    <script>function onLoaded() {document.getElementById("body_content").classList.add("w3-show")}</script>
     <link rel="apple-touch-icon" sizes="180x180" href="/static/media/Icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/media/Icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/media/Icons/favicon-16x16.png">
@@ -24,60 +25,62 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body class="w3-theme-d5" style="height:100%; margin: 0;">
-    <div id="navbar" class="w3-top" style="background-color:rgba(15, 15, 15, 0.85)">
-        <div class="w3-bar">
-            <div class="w3-bar-item"><img src="static/media/Logo.png" alt="" height="30" width="40"></div>
-            <div class="w3-hide-small" id="normalMenu">
-                <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="index.html">Home</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
-            </div>
-    
-            <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
-                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
-                <div id="mobileLinks" class="w3-hide">
-                    <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="index.html">Home</a>
-                    <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
-                    <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
-                    <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
+<body class="w3-theme-d5" style="height:100%; margin: 0;" onload="onLoaded()">
+    <div id="body_content" class="w3-hide">
+        <div id="navbar" class="w3-top" style="background-color:rgba(15, 15, 15, 0.85)">
+            <div class="w3-bar">
+                <div class="w3-bar-item w3-animate-fading w3-animate-zoom"><img id="Logo" src="static/media/Logo2.png" alt=""></div>
+                <div class="w3-hide-small" id="normalMenu">
+                    <a class="w3-bar-item w3-button w3-mobile w3-theme-active w3-padding-16" href="index.html">Home</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="projekte.html">Projekte</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="gear.html">Gear</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="kontakt.html">Kontakt</a>
+                </div>
+        
+                <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
+                    <a class="w3-bar-item" id="menuButton"><img src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
+                    <div id="mobileLinks" class="w3-hide">
+                        <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="index.html">Home</a>
+                        <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
+                        <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
+                        <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        
+        <div id="home">
+            <div class="w3-display-container w3-center"> 
+                <img src="static/media/Screenshot.png" style="width:100%; height:100vh; object-fit: cover"> 
+                <div class="w3-display-middle w3-container w3-text-white w3-padding-32">
+                    <img src="static/media/Logo.png" alt="" height="250" width="333">
+                    <h1 style="font-size: 7.5vh; margin-bottom: 0;">Niklas Buse</h1>
+                    <h4 style="margin-top: -10px; text-align:right">aka. ScreepCode</h3>
+                </div> 
+                <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                    <a href="#about_me"><img id="ReadMore" src="static/media/ReadMore.svg" alt=""></a>
+                </div> 
+            </div>
+        </div>
     
-    <div id="home">
-        <div class="w3-display-container w3-center"> 
-            <img src="static/media/Screenshot.png" style="width:100%; height:100vh; object-fit: cover"> 
-            <div class="w3-display-middle w3-container w3-text-white w3-padding-32">
-                <img src="static/media/Logo.png" alt="" height="250" width="333">
-                <h1 style="font-size: 7.5vh; margin-bottom: 0;">Niklas Buse</h1>
-                <h3 style="margin-top: 0; text-align:right">aka. ScreepCode</h3>
-            </div> 
-            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
-                <a href="#about_me"><img src="static/media/ReadMore.svg" alt="" height="100" width="150"></a>
-            </div> 
+        <div id="about_me" class="w3-padding">
+            <div class="w3-container" style="max-width:1110px; margin-left: auto; margin-right: auto;">
+                <h2 class="w3-center">Über mich:</h2>
+                <p class="">Hey, ich bin Niklas 👋
+                <br><br>
+                Ich bin 17 Jahre alt und leidenschaftlicher Informatiker im Hard- und Softwarebereich. Angefangen habe ich mit dem zusammenstellen von meinem eigenen PC und programmieren von kleinen Programmen in Java.
+                Seit dem bilde ich mich sowohl im Hardware- als auch Softwarebereich ständig weiter.
+                <br><br>
+                Zurzeit besuche ich die Gymnasiale Oberstufe und befinde mich in der Bewerbungsphase für mein angestrebtes Duales Studium der Informatik.
+                <br><br>
+                Ich programmiere hauptsächlich mit den Sprachen Python und Java. Aber auch kleine Webseiten, wie diese, gestalte ich hin und wieder. 
+                Ein Teil meiner Projekte veröffentliche ich auf <a href="https://github.com/ScreepCode" target="_blank">GitHub</a>. Eine Auswahl an repräsentativen Projekten befindet sich im <a href="projekte.html">ProjekteTab</a>.
+                <br><br>
+                Als Minderjähriger habe ich vor kurzem mein eigenes Gewerbe eröffnet. In diesem Rahme biete ich Dienstleistungen im IT-Bereich als auch in der Medientechnik an.
+                Du suchst einen Programmierer für dein Projekt oder jemanden, der deine kleine Webseitenidee umsetzt, dann melde dich bei mir ^^</p>
+            </div>
+            <br><br>
         </div>
-    </div>
-
-    <div id="about_me" class="w3-padding">
-        <div class="w3-container" style="max-width:1110px; margin-left: auto; margin-right: auto;">
-            <h2 class="w3-center">Über mich:</h2>
-            <p>Hey, ich bin Niklas 👋
-            <br><br>
-            Ich bin 17 Jahre alt und leidenschaftlicher Informatiker im Hard- und Softwarebereich. Angefangen habe ich mit dem zusammenstellen von meinem eigenen PC und programmieren von kleinen Programmen in Java.
-            Seit dem bilde ich mich sowohl im Hardware- als auch Softwarebereich ständig weiter.
-            <br><br>
-            Zurzeit besuche ich die Gymnasiale Oberstufe und befinde mich in der Bewerbungsphase für mein angestrebtes Duales Studium der Informatik.
-            <br><br>
-            Ich programmiere hauptsächlich mit den Sprachen Python und Java. Aber auch kleine Webseiten, wie diese, gestalte ich hin und wieder. 
-            Ein Teil meiner Projekte veröffentliche ich auf <a href="https://github.com/ScreepCode" target="_blank">GitHub</a>. Eine Auswahl an repräsentativen Projekten befindet sich im <a href="projekte.html">ProjekteTab</a>.
-            <br><br>
-            Als Minderjähriger habe ich vor kurzem mein eigenes Gewerbe eröffnet. In diesem Rahme biete ich Dienstleistungen im IT-Bereich als auch in der Medientechnik an.
-            Du suchst einen Programmierer für dein Projekt oder jemanden, der deine kleine Webseitenidee umsetzt, dann melde dich bei mir ^^</p>
-        </div>
-        <br><br>
     </div>
 </body>
 

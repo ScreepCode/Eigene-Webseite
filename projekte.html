@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/w3css.css">
     <link rel="stylesheet" href="static/css/w3css-theme.css">
     <link rel="stylesheet" href="static/css/hover.css">
+    <link rel="stylesheet" href="static/css/custom.css">
     <script text="text/javascript" src="static/js/custom.js"></script>
     
     <link rel="apple-touch-icon" sizes="180x180" href="/static/media/Icons/apple-touch-icon.png">
@@ -27,16 +28,16 @@
 <body class="w3-theme-d5" style="height:100%; margin: 0;">
     <div id="navbar" class="w3-top" style="background-color:rgba(15, 15, 15, 0.85)">
         <div class="w3-bar">
-            <div class="w3-bar-item"><img src="static/media/Logo.png" alt="" height="30" width="40"></div>
+            <div class="w3-bar-item w3-animate-fading w3-animate-zoom"><img id="Logo" src="static/media/Logo2.png" alt=""></div>
             <div class="w3-hide-small" id="normalMenu">
-                <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
-                <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="projekte.html">Projekte</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="index.html">Home</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-theme-active w3-padding-16" href="projekte.html">Projekte</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="gear.html">Gear</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="kontakt.html">Kontakt</a>
             </div>
     
             <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
-                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
+                <a class="w3-bar-item w3-animate-zoom" id="menuButton"><img src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
                 <div id="mobileLinks" class="w3-hide">
                     <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
                     <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="projekte.html">Projekte</a>
@@ -47,11 +48,12 @@
         </div>
     </div>
     
-    <div id="projekte" class="w3-center w3-padding" style="max-width:1500px; margin-left: auto; margin-right: auto; margin-top: 50px">
+    <div id="projekte" class="w3-center w3-padding" style="max-width:1300px; margin-left: auto; margin-right: auto; margin-top: 50px">
         <h1 class="w3-center">Projekte</h1>
 
-        <p class="w3-margin">Hier findest du eine kleine Auswahl meiner öffentlichen Projekte</p>
+        <p class="w3-margin w3-large">Hier findest du eine kleine Auswahl meiner öffentlichen Projekte</p>
         <div id="projektInfos" class="w3-row"></div>
+        <p class="w3-margin w3-large">Natürlich sind das nicht alle Projekte. <br> Weitere Projekte findest du auf meinem <a href="https://github.com/ScreepCode" target="_blank">GitHub</a> Profil, wo ich viele meiner Projekte hoste.</p>
     </div>
 
 <script>
@@ -76,14 +78,15 @@
             div.style = "text-decoration: none; color: inherit;"
 
             var card = document.createElement("div")
-            card.classList.add("w3-card", "w3-margin", "w3-theme-d4", "w3-round-large")
+            card.classList.add("w3-card", "w3-margin", "w3-theme-d3", "w3-round-large")
+            card.style.overflow = "hidden"
 
             var header = document.createElement("header")
-            header.classList.add("w3-container")
+            header.classList.add("w3-container" , "w3-round-large")
             var body = document.createElement("div")
-            body.classList.add("w3-container", "w3-theme-d3")
+            body.classList.add("w3-container", "w3-theme-d4")
             var footer = document.createElement("footer")
-            footer.classList.add("w3-container", "w3-row")
+            footer.classList.add("w3-container", "w3-row", "w3-theme-d4")
 
             var heading = document.createElement("h2")
             heading.innerHTML = repo["name"]
@@ -100,7 +103,7 @@
                 var language = document.createElement("h5")
                 language.classList.add("w3-container", "w3-left")
                 language.innerHTML = key
-                language.style = "padding:0"
+                language.style = "padding:0; font-size:large"
 
                 var languagePoint = document.createElement("p")
                 languagePoint.classList.add("w3-container", "w3-left")

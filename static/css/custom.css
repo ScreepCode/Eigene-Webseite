@@ -1,13 +1,41 @@
-#menuButton{
-    transition: auto;
+body{
+	font-family: Helvetica, sans-serif;
 }
 
-.transition {
-	/* -webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-ms-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	transition: all 0.3s linear; */
+a{
+	color: #007AC9;
+	text-decoration: none;
+}
 
-    transition: all 6s linear;
+a:hover{
+	text-decoration: underline;
+}
+
+#navbar a:hover{
+	text-decoration: none;
+}
+
+#impressum a:hover{
+	text-decoration: none;
+}
+
+#Logo{
+	height: 35px; 
+	width: 45px;
+	padding-top: 2px;
+}
+#ReadMore{
+	height: 100px; 
+	width: 150px;
+	margin-bottom: 5vh;
+}
+
+td:first-child {
+	text-align: right;
+	padding-right: 10px;
+}
+  
+td:last-child {
+	text-align: left;
+	padding-left: 10px;
 }

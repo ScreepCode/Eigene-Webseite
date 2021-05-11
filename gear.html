@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/w3css.css">
     <link rel="stylesheet" href="static/css/w3css-theme.css">
     <link rel="stylesheet" href="static/css/hover.css">
+    <link rel="stylesheet" href="static/css/custom.css">
     <script text="text/javascript" src="static/js/custom.js"></script>
     
     <link rel="apple-touch-icon" sizes="180x180" href="/static/media/Icons/apple-touch-icon.png">
@@ -27,16 +28,16 @@
 <body class="w3-theme-d5" style="height:100%; margin: 0;">
     <div id="navbar" class="w3-top" style="background-color:rgba(15, 15, 15, 0.85)">
         <div class="w3-bar">
-            <div class="w3-bar-item"><img src="static/media/Logo.png" alt="" height="30" width="40"></div>
+            <div class="w3-bar-item w3-animate-fading w3-animate-zoom"><img id="Logo" src="static/media/Logo2.png" alt=""></div>
             <div class="w3-hide-small" id="normalMenu">
-                <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
-                <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="gear.html">Gear</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="kontakt.html">Kontakt</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="index.html">Home</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="projekte.html">Projekte</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16 w3-theme-active" href="gear.html">Gear</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="kontakt.html">Kontakt</a>
             </div>
     
             <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
-                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
+                <a class="w3-bar-item" id="menuButton"><img src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
                 <div id="mobileLinks" class="w3-hide">
                     <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
                     <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
@@ -48,15 +49,15 @@
     </div>
     
     <div id="gear" class="w3-padding" style="max-width:1500px; margin-left: auto; margin-right: auto; margin-top: 50px">
-        <h1 class="w3-center">Gear</h1>
-        <p class="w3-margin">Hier kannst du eine Liste von Hardware und Software finden, die ich für meine Projekte und Streams nutze.</p>
+        <h1 class="w3-center w3-xxxlarge">Gear</h1>
+        <p class="w3-margin w3-center w3-large">Hier kannst du eine Liste von Hardware und Software finden, die ich für meine Projekte und Streams nutze.</p>
 
         <div class="w3-row w3-margin-bottom">
-            <div id="coding-software" class="w3-card-4 w3-half w3-mobile w3-margin-right w3-margin-bottom">
+            <div id="coding-software" class="w3-card-4 w3-half w3-mobile w3-margin-right w3-margin-bottom w3-theme-d3 w3-round-large" style="overflow: hidden;">
                 <header class="w3-container">
                     <h2>Coding Software</h2>
                 </header>
-                <div class="w3-container">
+                <div class="w3-container w3-theme-d4">
                     <ul>
                         <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
                         <li><a href="https://www.eclipse.org/eclipseide/" target="_blank">Eclipse IDE</a></li>
@@ -66,13 +67,12 @@
                         <li><a href="https://www.heidisql.com/" target="_blank">HeidiSQL</a></li>
                     </ul>
                 </div>
-
             </div>
-            <div id="mediensoftware" class="w3-card-4 w3-rest w3-mobile w3-margin-bottom">
+            <div id="mediensoftware" class="w3-card-4 w3-rest w3-mobile w3-margin-bottom w3-theme-d3 w3-round-large" style="overflow: hidden;">
                 <header class="w3-container">
                     <h2>Mediensoftware</h2>
                 </header>
-                <div class="w3-container">
+                <div class="w3-container w3-theme-d4">
                     <ul>
                         <li><a href="https://obsproject.com/de/download" target="_blank">OBS Studio (Streaming)</a></li>
                         <li><a href="https://www.blackmagicdesign.com/de/products/davinciresolve/" target="_blank">Davinci Resolve (Video Schnitt)</a></li>
@@ -83,11 +83,11 @@
         </div>
 
         <div class="w3-row">
-            <div id="pc-Hardware" class="w3-card-4 w3-half w3-mobile w3-margin-right w3-margin-bottom">
+            <div id="pc-Hardware" class="w3-card-4 w3-half w3-mobile w3-margin-right w3-margin-bottom w3-theme-d3 w3-round-large" style="overflow: hidden;">
                 <header class="w3-container">
                     <h2>PC Hardware</h2>
                 </header>
-                <div class="w3-container">
+                <div class="w3-container w3-theme-d4">
                     <ul>
                         <li><a href="https://www.amd.com/de/products/cpu/amd-ryzen-5-5600x" target="_blank">AMD Ryzen 5 5600X (CPU)</a></li>
                         <li><a href="https://www.bequiet.com/de/cpucooler/1842" target="_blank">be quiet! Pure Rock 2 Black (CPU Kühler)</a></li>
@@ -102,11 +102,11 @@
                     </ul>
                 </div>
             </div>
-            <div id="peripherie" class="w3-card-4 w3-rest w3-mobile w3-margin-bottom">
+            <div id="peripherie" class="w3-card-4 w3-rest w3-mobile w3-margin-bottom w3-theme-d3 w3-round-large" style="overflow: hidden;">
                 <header class="w3-container">
                     <h2>Peripherie</h2>
                 </header>
-                <div class="w3-container">
+                <div class="w3-container w3-theme-d4">
                     <ul>
                         <li><a href="https://www.asus.com/de/Displays-Desktops/Monitors/All-series/VG278Q/" target="_blank">Asus VG278Q (Monitor 1)</a></li>
                         <li><a href="https://www.philips.de/c-p/243V5QHAB_00/lcd-monitor-mit-smartcontrol-lite" target="_blank">Phillips PHL 234V5 2x (Monitor 2&3)</a></li>

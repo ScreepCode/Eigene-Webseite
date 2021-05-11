@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/w3css.css">
     <link rel="stylesheet" href="static/css/w3css-theme.css">
     <link rel="stylesheet" href="static/css/hover.css">
+    <link rel="stylesheet" href="static/css/custom.css">
     <script text="text/javascript" src="static/js/custom.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/static/media/Icons/apple-touch-icon.png">
@@ -27,16 +28,16 @@
 <body class="w3-theme-d5" style="height:100%; margin: 0;">
     <div id="navbar" class="w3-top" style="background-color:rgba(15, 15, 15, 0.85)">
         <div class="w3-bar">
-            <div class="w3-bar-item"><img src="static/media/Logo.png" alt="" height="30" width="40"></div>
+            <div class="w3-bar-item w3-animate-fading w3-animate-zoom"><img id="Logo" src="static/media/Logo2.png" alt="" height="35" width="45" style="padding-top: 2px;"></div>
             <div class="w3-hide-small" id="normalMenu">
-                <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
-                <a class="w3-bar-item w3-button w3-mobile" href="gear.html">Gear</a>
-                <a class="w3-bar-item w3-button w3-mobile w3-theme-active" href="kontakt.html">Kontakt</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="index.html">Home</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="projekte.html">Projekte</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16" href="gear.html">Gear</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-padding-16 w3-theme-active" href="kontakt.html">Kontakt</a>
             </div>
     
             <div class="w3-hide-medium w3-hide-large" id="mobileMenu">
-                <a class="w3-bar-item" id="menuButton"><img id="Logo" src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
+                <a class="w3-bar-item" id="menuButton"><img src="static/media/Menü.svg" height="30" width="50" onclick="changeVisibility('mobileLinks')"></a>
                 <div id="mobileLinks" class="w3-hide">
                     <a class="w3-bar-item w3-button w3-mobile" href="index.html">Home</a>
                     <a class="w3-bar-item w3-button w3-mobile" href="projekte.html">Projekte</a>
@@ -48,15 +49,15 @@
     </div>
     
     <div id="kontakt" class="w3-center w3-padding" style="max-width:600px; margin-left: auto; margin-right: auto; margin-top: 50px">
-        <h1 class="w3-center">Kontakt</h1>
+        <h1 class="w3-center w3-xxxlarge">Kontakt</h1>
 
-        <div class="w3-container w3-center w3-margin" id="socialLinksButtons">
-            <a href="" target="_blank"><img src="static/media/Discord.svg" alt="" width="50" height="50"></a>
-            <a href="https://github.com/ScreepCode" target="_blank"><img src="static/media/Github.svg" alt="" width="50" height="50"></a>
+        <div class="w3-container w3-center w3-margin w3-large" id="socialLinksButtons">
+            <a href="" target="_blank"><img class="hover" src="static/media/Discord.svg" alt="" width="50" height="50"></a>
+            <a href="https://github.com/ScreepCode" target="_blank"><img class="hover" src="static/media/Github.svg" alt="" width="50" height="50"></a>
         </div>
 
         <div class="w3-container w3-center w3-margin" id="socialLinks">
-            <table class="w3-table w3-centered w3-large w3-margin">
+            <table class="w3-table w3-large w3-margin">
                 <tr><td>Mail</td><td><a href='mailto:nicki_bu@gmx.de'>nicki_bu@gmx.de</a></td></tr>
                 <tr><td>Discord</td><td><a href="">Nicki#7736</a></td></tr>
                 <tr><td>GitHub</td><td><a href="https://github.com/ScreepCode" target="_blank">ScreepCode</a></td></tr>
@@ -64,11 +65,11 @@
         </div>
 
         <div class="w3-container w3-center w3-margin" id="impressum">
-            <button><a class="w3-large" href="impressum.html">Impressum</a></button>
+            <button class="w3-button w3-ripple w3-gray w3-round-large w3-large w3-border w3-border-black"><a class="w3-large" href="impressum.html" style="color:black">Impressum</a></button>
         </div>
     </div>
 
-    <div id="hinweise" class="w3-center w3-padding" style="max-width:600px; margin-left: auto; margin-right: auto; margin-top: 50px">
+    <div id="hinweise" class="w3-center w3-padding" style="max-width:600px; margin-left: auto; margin-right: auto; margin-top: 3vh">
     
         <div class="w3-container w3-center w3-margin" id="webseite">
             <h3>Diese Seite wurde gebaut mit:</h3>
