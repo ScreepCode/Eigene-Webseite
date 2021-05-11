@@ -24,8 +24,8 @@
         }
     },
     {
-        "name": "Webseite_Hommel_Bilder",
-        "html_url": "https://github.com/ScreepCode/Webseite_Hommel_Bilder",
+        "name": "Webseite-Hommel-Bilder",
+        "html_url": "https://github.com/ScreepCode/Webseite-Hommel-Bilder",
         "description": "Webgallery generated from JSON as Javascript Object",
         "languages": {
             "HTML": 20085,
