@@ -1,0 +1,4 @@
+# Aktiviere HTTPS
+RewriteEngine On
+RewriteCond %{Server_Port} !=443
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
