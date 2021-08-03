@@ -39,3 +39,7 @@ td:last-child {
 	text-align: left;
 	padding-left: 10px;
 }
+
+li{
+	padding: 2px;
+}
