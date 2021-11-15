@@ -43,3 +43,11 @@ td:last-child {
 li{
 	padding: 2px;
 }
+
+#Landing{
+	width: 30vw;
+}
+
+#LandingSmall{
+	width: 80vw;
+}
