@@ -9,35 +9,39 @@
 
 <url>
   <loc>https://www.niklas-buse.de/</loc>
-  <lastmod>2021-06-01T16:19:44+00:00</lastmod>
+  <lastmod>2021-12-06T07:22:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.niklas-buse.de/index.html</loc>
-  <lastmod>2021-06-01T16:19:44+00:00</lastmod>
+  <loc>https://www.niklas-buse.de/Home.html</loc>
+  <lastmod>2021-12-06T07:22:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.niklas-buse.de/projekte.html</loc>
-  <lastmod>2021-06-01T16:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.niklas-buse.de/gear.html</loc>
-  <lastmod>2021-06-01T16:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.niklas-buse.de/kontakt.html</loc>
-  <lastmod>2021-06-01T16:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.niklas-buse.de/impressum.html</loc>
-  <lastmod>2021-06-01T16:19:45+00:00</lastmod>
+  <loc>https://www.niklas-buse.de/ueber-mich/DasBinIch.html</loc>
+  <lastmod>2021-12-06T07:22:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>https://www.niklas-buse.de/ueber-mich/Projekte.html</loc>
+  <lastmod>2021-12-06T07:22:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.niklas-buse.de/ueber-mich/Gear.html</loc>
+  <lastmod>2021-12-06T07:22:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.niklas-buse.de/Kontakt.html</loc>
+  <lastmod>2021-12-06T07:25:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.niklas-buse.de/Impressum.html</loc>
+  <lastmod>2021-12-06T07:22:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 
 
 </urlset>
