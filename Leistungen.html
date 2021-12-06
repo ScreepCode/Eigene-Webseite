@@ -65,12 +65,130 @@
             </div>
         </div>
     
-    
-    
+        <div id="leistungen" class="w3-center w3-padding" style="max-width:1200px; margin-left: auto; margin-right: auto; margin-top: 50px">
+            <h1 class="w3-center">Leistungen</h1>
+            <h5 class="w3-margin"><u>Diese Leistungen biete ich ihnen an:</u></h5>
+            <p class="w3-margin-top w3-large"  style="margin-bottom: 32px;">Ich biete die Leistung an, die sie Suchen? -> Dann <a href="Kontakt.html" >melden</a> sie sich bei mir. </p>
 
-    
+            <div id="leistungsDetails"></div>
+            <p class="w3-margin w3-large">Ich biete die Leistung an, die sie Suchen? -> Dann <a href="Kontakt.html">melden</a> sie sich bei mir. </p>
+        </div>
     </div>
 
 </body>
+
+<script>
+
+    (async function () {
+        leistungenJSON = await fetch("../static/js/leistungen.json")
+        .then(response => response.json())
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+        leistungenJSON.forEach(function(leistung){
+            //DESKTOP
+            var divLarge = document.createElement("div")
+            divLarge.id = "desktop"
+            divLarge.classList.add("w3-hide-small", "w3-hide-medium")
+            divLarge.style = "text-align: justify;"
+
+            var cardLarge = document.createElement("div")
+            cardLarge.classList.add("w3-card-4", "w3-padding", "w3-round-large", "w3-theme-d3", "w3-margin-top")
+            cardLarge.style = "margin-bottom: 32px"
+
+            var rowLarge = document.createElement("div")
+            rowLarge.classList.add("w3-row")
+
+            var imageHalfLarge = document.createElement("div")
+            imageHalfLarge.classList.add("w3-container", "w3-half")
+
+            var imageLarge = document.createElement("img")
+            imageLarge.classList.add("w3-image", "w3-round-xlarge", "w3-margin-left")
+            imageLarge.src = leistung["bild"]
+            imageLarge.style="width: 100%; object-fit: fill; transform: translate(-3%,-7%);"
+
+            var textHalfLarge = document.createElement("div")
+            textHalfLarge.classList.add("w3-container", "w3-half")
+
+            var headingLarge = document.createElement("h1")
+            headingLarge.innerHTML = leistung["name"]
+
+            var trennLarge = document.createElement("hr")
+            trennLarge.style = "border : 1px solid #C3C3C3;"
+
+            var standardTextLarge = document.createElement("p")
+            standardTextLarge.id = "standard"
+            standardTextLarge.innerHTML = leistung["standard"]
+
+            var exampleTextLarge = document.createElement("p")
+            exampleTextLarge.innerHTML = leistung["example"]
+            exampleTextLarge.id = "example"
+
+            divLarge.appendChild(cardLarge)
+            cardLarge.appendChild(rowLarge)
+            rowLarge.appendChild(imageHalfLarge)
+            rowLarge.appendChild(textHalfLarge)
+            imageHalfLarge.appendChild(imageLarge)
+            textHalfLarge.appendChild(headingLarge)
+            textHalfLarge.appendChild(trennLarge)
+            textHalfLarge.appendChild(standardTextLarge)
+            textHalfLarge.appendChild(exampleTextLarge)
+
+            document.getElementById("leistungsDetails").appendChild(divLarge)
+
+
+            //MOBILE
+            var divSmaller = document.createElement("div")
+            divSmaller.id = "mobile"
+            divSmaller.classList.add("w3-hide-large")
+            divSmaller.style = "text-align: justify;"
+
+            var cardSmaller = document.createElement("div")
+            cardSmaller.classList.add("w3-card-4", "w3-padding", "w3-round-large", "w3-theme-d3", "w3-margin-top")
+            cardSmaller.style = "margin-bottom: 24px"
+
+            var imageDivSmaller = document.createElement("div")
+            imageDivSmaller.classList.add("w3-container", "w3-twothird")
+
+            var imageSmaller = document.createElement("img")
+            imageSmaller.classList.add("w3-image", "w3-round-xlarge", "w3-margin-left")
+            imageSmaller.src = leistung["bild"]
+            imageSmaller.style = "width: 100%;  transform: translate(-5%,-10%);"
+
+            //var textDivSmaller = document.createElement("div")
+            //textDivSmaller.classList.add("w3-container", "w3-half")
+
+            var headingSmaller = document.createElement("h3")
+            headingSmaller.innerHTML = leistung["name"]
+
+            var trennSmaller = document.createElement("hr")
+            trennSmaller.style = "border : 1px solid #C3C3C3;"
+
+            var standardTextSmaller = document.createElement("p")
+            standardTextSmaller.id = "standard"
+            standardTextSmaller.innerHTML = leistung["standard"]
+
+            var exampleTextSmaller = document.createElement("p")
+            exampleTextSmaller.innerHTML = leistung["example"]
+            exampleTextSmaller.id = "example"
+
+            divSmaller.appendChild(cardSmaller)
+            cardSmaller.appendChild(imageDivSmaller)
+            //cardSmaller.appendChild(textDivSmaller)
+            imageDivSmaller.appendChild(imageSmaller)
+            cardSmaller.appendChild(headingSmaller)
+            cardSmaller.appendChild(trennSmaller)
+            cardSmaller.appendChild(standardTextSmaller)
+            cardSmaller.appendChild(exampleTextSmaller)
+
+            document.getElementById("leistungsDetails").appendChild(divSmaller)
+
+            
+        })
+
+    })();
+
+</script>
 
 </html>

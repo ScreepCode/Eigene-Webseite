@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Webseiten Erstellung",
+        "bild": "static/media/Background.png",
+        "standard": "Ich erstelle sowohl statische Webseiten, wie meine Homepage, aber auch dynamische Webseiten.",
+        "example": "Ein Beispiel für eine dynamische Webseite ist <a target='_blank' href='https://www.detlefhommel.com'>detlefhommel.com</a>, welches eine Online Galerie für seine Kunstwerke darstellt. Diese kann er jederzeit und unkompliziert ergänzen mit weiteren Bildern."
+    },
+    {
+        "name": "Software Entwicklung",
+        "bild": "static/media/Background.png",
+        "standard": "Ich programmiere Software jeder Art. Dazu gehören unteranderem (Chat)bots oder kleine Tools.",
+        "example": "Ein Beispiel für ein kleines Tool, ist ein Programm zum Automatischen erstellen von Bezahl-QR-Codes. Ein Beispiel für einen meiner (Chat)bots ist mein eigenentwickelter Discord Bot, der sowohl ChatCommands entgegennimmt und Verwaltungsaufgaben übernimmmt."
+    },
+    {
+        "name": "Technische Problemsuche",
+        "bild": "static/media/Background.png",
+        "standard": "Ihr PC stützt ab oder arbeitet nicht wie erwartet? Durch spezielle Software versuche ich, das Problem zu identifizieren und wenn mir möglich zu beheben.",
+        "example": ""
+    },
+    {
+        "name": "Individuelle Unterstützung",
+        "bild": "static/media/Background.png",
+        "standard": "Sie benötigen Hilfe, weil sie nicht verstehen, wie bestimmte Programme funktionieren? Oder sie brauchen Unterstützung bei dem Konfigurieren ihres neuen Geräts?",
+        "example": "Dann kann ich auf Wunsch ihnen direkte Unterstützung geben."
+    },
+    {
+        "name": "IT-Beratung",
+        "bild": "static/media/Background.png",
+        "standard": "Sie benötigen Beratung, was sie für ein Computer kaufen sollen oder haben Fragen zu technischen Produkten?",
+        "example": "Dann sprechen sie mich an. Wir finden eine für sie passende Lösung für ihr Bedürfniss."
+    },
+    {
+        "name": "Sonstiges",
+        "bild": "static/media/Background.png",
+        "standard": "Neben den genannten Tätigkeiten, kann ich in weiteren Bereichen ihr Ansprechpartner sein",
+        "example": "Beispiele für andere Bereiche: <br>- Aufbauhelfer in der Veranstaltungstechnik"
+    }
+]
